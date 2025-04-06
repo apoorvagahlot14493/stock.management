@@ -60,5 +60,31 @@ namespace stock.management.BusinessAccess.Services
             _context.ProductDetails.Remove(product);
             await _context.SaveChangesAsync();
         }
+        public async Task<ProductDetail> DecrementStock(int id, int quantity)
+        {
+            var product = await _context.ProductDetails.FindAsync(id);
+            if (product == null)
+            {
+                throw new KeyNotFoundException("Product not found");
+            }
+            if (product.Quantity < quantity)
+            {
+                throw new InvalidOperationException("Insufficient stock");
+            }
+            product.Quantity -= quantity;
+            await _context.SaveChangesAsync();
+            return product;
+        }
+        public async Task<ProductDetail> AddToStock(int id, int quantity)
+        {
+            var product = await _context.ProductDetails.FindAsync(id);
+            if (product == null)
+            {
+                throw new KeyNotFoundException("Product not found");
+            }
+            product.Quantity += quantity;
+            await _context.SaveChangesAsync();
+            return product;
+        }
     }
 }

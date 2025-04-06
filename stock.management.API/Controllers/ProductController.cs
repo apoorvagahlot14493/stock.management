@@ -57,5 +57,36 @@ namespace stock.management.API.Controllers
             await _productService.DeleteProductAsync(id);
             return Ok();
         }
+        [HttpPut("decrement-stock/{id}/{quantity}")]
+        public async Task<IActionResult> DecrementStock(int id, int quantity)
+        {
+            var product = await _productService.DecrementStock(id, quantity);
+            return Ok(product);
+            //var product = await _context.ProductDetails.FindAsync(id);
+            //if (product == null)
+            //{
+            //    return NotFound();
+            //}
+
+            //product.Quantity -= quantity;
+            //await _context.SaveChangesAsync();
+            //return Ok();
+        }
+
+        [HttpPut("add-to-stock/{id}/{quantity}")]
+        public async Task<IActionResult> AddToStock(int id, int quantity)
+        {
+            var product = await _productService.AddToStock(id, quantity);
+            return Ok(product);
+            //var product = await _context.ProductDetails.FindAsync(id);
+            //if (product == null)
+            //{
+            //    return NotFound();
+            //}
+
+            //product.Quantity += quantity;
+            //await _context.SaveChangesAsync();
+            //return Ok();
+        }
     }
 }

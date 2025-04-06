@@ -14,5 +14,7 @@ namespace stock.management.BusinessAccess.Interfaces
         Task<ProductDetail> CreateProductAsync(ProductDetail product);
         Task<ProductDetail> UpdateProductAsync(int id, ProductDetail product);
         Task DeleteProductAsync(int id);
+        Task<ProductDetail> DecrementStock(int id, int quantity);
+        Task<ProductDetail> AddToStock(int id, int quantity);
     }
 }
