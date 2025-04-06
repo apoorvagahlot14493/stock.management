@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\stock.management.DataAccess\stock.management.DataAccess.csproj" />
+    <ProjectReference Include="..\stock.management.SharedLibrary\stock.management.SharedLibrary.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1700,7 +1700,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "stock.management.DataAccess": "1.0.0"
+          "stock.management.DataAccess": "1.0.0",
+          "stock.management.SharedLibrary": "1.0.0"
         },
         "compile": {
           "bin/placeholder/stock.management.BusinessAccess.dll": {}
@@ -1720,6 +1721,16 @@
         },
         "runtime": {
           "bin/placeholder/stock.management.DataAccess.dll": {}
+        }
+      },
+      "stock.management.SharedLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/stock.management.SharedLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/stock.management.SharedLibrary.dll": {}
         }
       }
     }
@@ -5195,6 +5206,11 @@
       "type": "project",
       "path": "../stock.management.DataAccess/stock.management.DataAccess.csproj",
       "msbuildProject": "../stock.management.DataAccess/stock.management.DataAccess.csproj"
+    },
+    "stock.management.SharedLibrary/1.0.0": {
+      "type": "project",
+      "path": "../stock.management.SharedLibrary/stock.management.SharedLibrary.csproj",
+      "msbuildProject": "../stock.management.SharedLibrary/stock.management.SharedLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {

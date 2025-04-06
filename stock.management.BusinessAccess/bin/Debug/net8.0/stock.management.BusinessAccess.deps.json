@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "stock.management.BusinessAccess/1.0.0": {
         "dependencies": {
-          "stock.management.DataAccess": "1.0.0"
+          "stock.management.DataAccess": "1.0.0",
+          "stock.management.SharedLibrary": "1.0.0"
         },
         "runtime": {
           "stock.management.BusinessAccess.dll": {}
@@ -624,6 +625,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "stock.management.SharedLibrary/1.0.0": {
+        "runtime": {
+          "stock.management.SharedLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1026,6 +1035,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "stock.management.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "stock.management.SharedLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

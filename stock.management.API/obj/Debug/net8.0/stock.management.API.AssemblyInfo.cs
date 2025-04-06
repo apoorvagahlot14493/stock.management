@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("stock.management.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef8ec1a668b061206db853ec2fc00a22dc39407c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4d2eac6c6aa16e472ffa971dc1309e571197196")]
 [assembly: System.Reflection.AssemblyProductAttribute("stock.management.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("stock.management.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

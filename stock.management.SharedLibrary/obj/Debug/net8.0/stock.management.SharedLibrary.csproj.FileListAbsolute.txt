@@ -1,0 +1,15 @@
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\bin\Debug\net8.0\stock.management.SharedLibrary.exe
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\bin\Debug\net8.0\stock.management.SharedLibrary.deps.json
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\bin\Debug\net8.0\stock.management.SharedLibrary.runtimeconfig.json
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\bin\Debug\net8.0\stock.management.SharedLibrary.dll
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\bin\Debug\net8.0\stock.management.SharedLibrary.pdb
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\obj\Debug\net8.0\stock.management.SharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\obj\Debug\net8.0\stock.management.SharedLibrary.AssemblyInfoInputs.cache
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\obj\Debug\net8.0\stock.management.SharedLibrary.AssemblyInfo.cs
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\obj\Debug\net8.0\stock.management.SharedLibrary.csproj.CoreCompileInputs.cache
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\obj\Debug\net8.0\stock.management.SharedLibrary.sourcelink.json
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\obj\Debug\net8.0\stock.management.SharedLibrary.dll
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\obj\Debug\net8.0\refint\stock.management.SharedLibrary.dll
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\obj\Debug\net8.0\stock.management.SharedLibrary.pdb
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\obj\Debug\net8.0\stock.management.SharedLibrary.genruntimeconfig.cache
+C:\Users\apoorva.gahlot\source\repos\stock.management\stock.management.SharedLibrary\obj\Debug\net8.0\ref\stock.management.SharedLibrary.dll

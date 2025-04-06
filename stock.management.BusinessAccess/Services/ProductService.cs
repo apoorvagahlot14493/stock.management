@@ -2,6 +2,7 @@
 using stock.management.BusinessAccess.Interfaces;
 using stock.management.DataAccess;
 using stock.management.DataAccess.DataModels;
+using stock.management.SharedLibrary.CommonUtility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,9 @@ namespace stock.management.BusinessAccess.Services
 {
     public class ProductService : IProductService
     {
-        private readonly ProductDbContext _context;
+        private readonly AppDbContext _context;
 
-        public ProductService(ProductDbContext context)
+        public ProductService(AppDbContext context)
         {
             _context = context;
         }
@@ -31,7 +32,7 @@ namespace stock.management.BusinessAccess.Services
 
         public async Task<ProductDetail> CreateProductAsync(ProductDetail product)
         {
-            product.ProductId = new Random().Next(100000, 999999); // Example ID generation
+            product.ProductId = CommonUtility.GenerateUniqueId();
             _context.ProductDetails.Add(product);
             await _context.SaveChangesAsync();
             return product;
@@ -39,11 +40,6 @@ namespace stock.management.BusinessAccess.Services
 
         public async Task<ProductDetail> UpdateProductAsync(int id, ProductDetail product)
         {
-            if (id != product.ProductId)
-            {
-                throw new ArgumentException("Product ID mismatch");
-            }
-
             _context.Entry(product).State = EntityState.Modified;
             await _context.SaveChangesAsync();
             return product;

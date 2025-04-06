@@ -10,7 +10,7 @@ using stock.management.DataAccess;
 
 namespace stock.management.DataAccess.Migrations
 {
-    [DbContext(typeof(ProductDbContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20250404200614_InitialCreate")]
     partial class InitialCreate
     {

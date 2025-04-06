@@ -9,7 +9,7 @@ using stock.management.DataAccess;
 
 namespace stock.management.DataAccess.Migrations
 {
-    [DbContext(typeof(ProductDbContext))]
+    [DbContext(typeof(AppDbContext))]
     partial class ProductDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -35,8 +35,7 @@ namespace stock.management.DataAccess.Migrations
 
                     b.Property<long>("Quantity")
                         .HasColumnType("bigint");
-                    b.Property<long>("Quantity")
-                        .HasColumnType("bigint");
+
                     b.HasKey("ProductId");
 
                     b.ToTable("ProductDetail", (string)null);

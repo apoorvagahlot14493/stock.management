@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace stock.management.DataAccess
 {
-   public  class ProductDbContext : DbContext
+   public  class AppDbContext : DbContext
     {
-        public ProductDbContext(DbContextOptions<ProductDbContext> options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
         public DbSet<ProductDetail> ProductDetails { get; set; }
