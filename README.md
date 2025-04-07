@@ -12,9 +12,9 @@ The Stock Management API is designed to manage products, including creating, upd
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/stock-management-api.git
+   git clone https://github.com/apoorvagahlot14493/stock.management.git
 2. Navigate to project 
-cd stock-management-api
+cd stock.management.api
 
 3.Restore the dependencies:
 dotnet restore
