@@ -11,7 +11,7 @@ namespace stock.management.SharedLibrary.CommonUtility
         private static readonly object _lock = new object();
         private static long _lastTimestamp = -1L;
         private static int _sequence = 0;
-        private const int MaxSequence = 4095; // 12 bits for sequence
+        private const int MaxSequence = 4095;  
 
         public static int GenerateUniqueId()
         {
@@ -30,8 +30,7 @@ namespace stock.management.SharedLibrary.CommonUtility
             }
 
             _lastTimestamp = timestamp;
-
-            // Generate a 6-digit number
+ 
             int newId = GenerateRandomId(timestamp, _sequence);
             return newId;
         }
@@ -55,7 +54,7 @@ namespace stock.management.SharedLibrary.CommonUtility
         {
             // Combine timestamp and sequence to generate a 6-digit number
             int baseId = (int)((timestamp % 1000000) + sequence);
-            return baseId % 900000 + 100000; // Ensure the ID is within the range 100000 to 999999
+            return baseId % 900000 + 100000;  
         }
     }
 }
